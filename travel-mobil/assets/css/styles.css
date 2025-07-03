@@ -1,0 +1,112 @@
+/* Reset dan gaya dasar body */
+body {
+    background-color: #f5faf9;
+    font-family: 'Segoe UI', 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar dengan gradient dan bayangan */
+.navbar {
+    background: linear-gradient(135deg, #00796b, #26a69a), #00796b;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1000;
+}
+
+/* Brand di navbar */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: #fff !important;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    text-decoration: none;
+    padding-left: 1rem;
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 1010;
+}
+
+/* Container link navbar */
+.navbar-links {
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+/* Link navigasi di navbar */
+.nav-link {
+    color: #fff !important;
+    margin: 0 0.75rem;
+    font-weight: 600;
+    transition: color 0.3s, transform 0.2s;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    text-decoration: none;
+    background: transparent;
+    position: relative;
+    z-index: 1010;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Efek hover dan aktif pada link */
+.nav-link:hover,
+.nav-link.active {
+    color: #ffd54f !important;
+    transform: translateY(-3px);
+    text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+/* Container utama untuk konten */
+.container {
+    margin-top: 2.5rem;
+    max-width: 1200px;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Styling kotak biru */
+.kotak-biru {
+    background-color: #2196f3;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(33, 150, 243, 0.15);
+    font-weight: 500;
+    font-size: 1.1rem;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+        margin-top: 1.5rem;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    .navbar-links {
+        flex-direction: column;
+        width: 100%;
+        padding-right: 0;
+    }
+    .nav-link {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
